@@ -73,3 +73,13 @@ h2 {
 .display_block {
     display: block;
 }
+
+.sec_dati input:focus , .sec_dati select:focus {
+    background-color: rgb(167, 36, 57);
+    color: white;
+
+}
+
+.sec_dati input:focus::placeholder , .sec_dati select:focus::placeholder {
+    color: white;
+}
