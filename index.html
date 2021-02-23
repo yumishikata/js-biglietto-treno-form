@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/main.css">
+    <title>Biglietto Treno</title>
+</head>
+<body>
+    <main class="text-center">
+        <h2>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h2>
+        <section class="sec_dati my_sec">
+            <form action="">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-xs-4">
+                            <h5>Nome e Cognome</h5>
+                            <input type="text" placeholder="Inserisci il tuo nome" id="get_nome">
+                        </div>
+                        <div class="col-xs-4">
+                            <h5>Km da percorrere</h5>
+                            <input type="number" placeholder="Inserisci i km" min="0" id="get_km">
+                        </div>
+                        <div class="col-xs-4">
+                            <h5>Fascia d'età</h5>
+                            <select name="" id="get_eta">
+                                <option value="minorenne">Minorenne</option>
+                                <option value="maggiorenne">Maggiorenne</option>
+                                <option value="over-65">Over 65</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </form>
+            <p id="genera_btn" class="btn my_button">Genera</p>
+            <p id="annulla_btn" class="btn my_button">Annulla</p>
+        </section>
+
+        <h2>IL TUO BIGLIETTO</h2>
+
+        <section id="sec_biglietto" class="my_sec display_none">
+            <h4>DETTAGLIO PASSEGGERI</h4>
+            <div class="container-fluid biglietto_border">
+                <div class="row">
+                    <div class="col-xs-4 div_pax">
+                        <h4>NOME</h4>
+                        <h4>PASSEGGERO</h4>
+                        <h4 id="nome_pax"></h4>
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="row dati_biglietto">
+                            <div class="col-xs-3 pos_rel">
+                                <h4>Offerta</h4>
+                                <h5 id="offerta"></h5>
+                            </div>
+                            <div class="col-xs-3 pos_rel">
+                                <h4>Carrozza</h4>
+                                <h5 id="carrozza"></h5>
+                            </div>
+                            <div class="col-xs-3 pos_rel">
+                                <h4>Codice CP</h4>
+                                <h5 id="codice"></h5>
+                            </div>
+                            <div class="col-xs-3 pos_rel">
+                                <h4>Costo Biglietto</h4>
+                                <h5 id="costo"></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

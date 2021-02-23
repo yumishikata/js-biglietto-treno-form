@@ -1,0 +1,75 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    background-color: rgb(167, 36, 57);
+}
+
+h2 {
+    color: white;
+}
+
+.my_sec {
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: white;
+}
+
+.sec_dati {
+    padding: 20px 50px;
+}
+
+.sec_dati h5 {
+    color:rgb(167, 36, 57);
+}
+
+.sec_dati input, .sec_dati select {
+    border: 1px solid rgb(167, 36, 57);
+    height: 25px;
+    border-radius: 5px;
+    text-align: center;
+}
+.my_button {
+    margin-top: 50px;
+    color:  rgb(167, 36, 57);
+    border-radius: 5px;
+    border: 1px solid grey;
+    background-color: lightgrey;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: bold;
+}
+
+#sec_biglietto {
+    padding: 20px;
+    color: black;
+    text-align: left;
+}
+
+.biglietto_border {
+    border-top: 1px solid grey;
+    border-bottom: 1px solid grey;
+}
+
+.div_pax {
+    background-color: grey;
+    height: 130px;
+}
+
+.pos_rel {
+    position: relative;
+    height: 130px;
+}
+
+#sec_biglietto h5 {
+    position: absolute;
+    bottom: 10px;
+}
+.display_none {
+    display: none;
+}
+
+.display_block {
+    display: block;
+}
