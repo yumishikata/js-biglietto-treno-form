@@ -29,7 +29,7 @@ function() {
     costoBiglietto -= costoBiglietto * sconto / 100;
     document.getElementById("nome_pax").innerHTML = nome;
     document.getElementById("offerta").innerHTML = offerta;
-    document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 10);
+    document.getElementById("carrozza").innerHTML = Math.floor(Math.random() * 10) + 1;
     document.getElementById("codice").innerHTML = Math.floor(Math.random() * 100000);
     document.getElementById("costo").innerHTML = Math.round(costoBiglietto * 100) / 100 + "€";
 
